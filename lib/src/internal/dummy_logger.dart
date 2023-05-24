@@ -99,4 +99,7 @@ class DummyLogger implements Logger {
 
   @override
   Logger? get parent => null;
+
+  @override
+  Stream<Level?> get onLevelChanged => const Stream.empty();
 }
